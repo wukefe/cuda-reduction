@@ -184,7 +184,7 @@ Results:
 | cuda 5   | 1.5145     |
 | cuda 6   | 0.969      |
 
-- See the log file: [click](./log1.txt)
+- See the log file: [click](./src/log1.txt)
 
 Discussions
 
