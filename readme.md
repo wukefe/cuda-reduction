@@ -2,8 +2,7 @@
 
 ### Overview
 
-Given a one-dimension array (i.e. vector) which has **N** integers, implement a
-reduction operation in CUDA.
+Given a one-dimension integer array (i.e. vector), implement a reduction operation on it in CUDA.
 
 ### Implementation
 
@@ -168,7 +167,7 @@ Configurations
 - Input: 4M integers (4194304 = 2^22)
 - Threads per block: 256
 
-Run Versions
+Run versions
 
     ./run.sh <id>   # id can be: 0/1/2/3/4/5/6
 
