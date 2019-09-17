@@ -30,7 +30,7 @@ static I calcSum(I *x, I n){
 }
 
 static I* createVector(L n){
-    I *x = NEW(x, I, n); DOI(n, x[i]=i); R x;
+    I *x; NEW(x, I, n); DOI(n, x[i]=i); R x;
 }
 
 static I run_cpu_version(I *x, L n){
