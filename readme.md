@@ -2,8 +2,8 @@
 
 ### Overview
 
-Given a one-dimension vector which has **N** integers, implement a reduction
-operation in CUDA.
+Given a one-dimension array (i.e. vector) which has **N** integers, implement a
+reduction operation in CUDA.
 
 ### Implementation
 
