@@ -1,0 +1,234 @@
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 0
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.496
+[GPU] The elapsed time (ms): 541.785 (v0)
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 0
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.489
+[GPU] The elapsed time (ms): 541.661 (v0)
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 1
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 1.589
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 3.981 (v1)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+z[5] = 360320
+z[6] = 425856
+z[7] = 491392
+z[8] = 556928
+z[9] = 622464
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 1
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 0.685
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 3.975 (v1)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+z[5] = 360320
+z[6] = 425856
+z[7] = 491392
+z[8] = 556928
+z[9] = 622464
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 2
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.484
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.042 (v2)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+z[5] = 360320
+z[6] = 425856
+z[7] = 491392
+z[8] = 556928
+z[9] = 622464
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 2
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 0.699
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.032 (v2)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+z[5] = 360320
+z[6] = 425856
+z[7] = 491392
+z[8] = 556928
+z[9] = 622464
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 3
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 0.703
+# of Block: 8192
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.097 (v3)
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 3
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 1.76
+# of Block: 8192
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.063 (v3)
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 4
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.512
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.056 (v4)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 4
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.471
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 2.063 (v4)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 5
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.483
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 1.506 (v5)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 5
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.529
+# of Block: 16384
+# of Thread: 256
+[GPU] The elapsed average time (ms): 1.523 (v5)
+z[0] = 32640
+z[1] = 98176
+z[2] = 163712
+z[3] = 229248
+z[4] = 294784
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 6
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.479
+# of Block: 8192
+# of Thread: 256
+[GPU] The elapsed average time (ms): 0.971 (v6)
+z[0] = 130816
+z[1] = 392960
+z[2] = 655104
+z[3] = 917248
+z[4] = 1179392
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152
+nvcc compile & run
++ nvcc main.cu -o main -O3
++ ./main 4194304 6
+=== Starting CUDA ===
+[CPU] The elapsed time (ms): 2.51
+# of Block: 8192
+# of Thread: 256
+[GPU] The elapsed average time (ms): 0.967 (v6)
+z[0] = 130816
+z[1] = 392960
+z[2] = 655104
+z[3] = 917248
+z[4] = 1179392
+
+Output (n = 4194304):
+	Result [cpu]: -2097152
+	Result [gpu]: -2097152

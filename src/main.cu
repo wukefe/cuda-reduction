@@ -6,7 +6,7 @@ typedef int          I;
 typedef long long    L;
 typedef unsigned int UI;
 
-#define NUM_THREAD 128 //4
+#define NUM_THREAD 256
 
 #define P printf
 #define R return
@@ -22,7 +22,7 @@ typedef unsigned int UI;
 #define CUDA_SAVE(x,d_x,t,n) cudaMemcpy(x, d_x, sizeof(t)*(n), cudaMemcpyDeviceToHost)
 
 static F calcTime(struct timeval t1, struct timeval t2){
-    return (1000000.0*(t2.tv_sec-t1.tv_sec) + t2.tv_usec-t1.tv_usec)/1000.0;
+    R (1000000.0*(t2.tv_sec-t1.tv_sec) + t2.tv_usec-t1.tv_usec)/1000.0;
 }
 
 static I calcSum(I *x, I n){
@@ -69,12 +69,11 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     printBanner("Starting CUDA");
-    L n  = strtoll(argv[1], NULL, 10);
-    I op = atoi(argv[2]);
-    I *x = createVector(n);
-    // cpu: check result
-    I result1 = run_cpu_version(x, n);
-    I result2 = run_gpu_version(x, n, op);
+    L n  = strtoll(argv[1], NULL, 10);     /* size of 1-D vector */
+    I op = atoi(argv[2]);                  /* which kernel */
+    I *x = createVector(n);                /* input 1-D vector */
+    I result1 = run_cpu_version(x, n);     /* cpu: validate results */
+    I result2 = run_gpu_version(x, n, op); /* gpu: run with diff kernels */
     P("\nOutput (n = %lld):", n);
     P("\n\tResult [cpu]: %d\n\tResult [gpu]: %d\n", result1, result2);
     return 0;

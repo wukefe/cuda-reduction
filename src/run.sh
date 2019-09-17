@@ -1,6 +1,11 @@
 #!/bin/bash
+if [ ! $# -eq 1 ] ; then
+    echo "Usage: $0 <0/1/2/3/4/5/6>"
+    exit 1
+fi
 echo "nvcc compile & run"
-flag="-Xptxas -O3,-v"
+#flag="-Xptxas -O3,-v"
+flag="-O3"
 (set -x && nvcc main.cu -o main ${flag} && ./main 4194304 $1)
 #(set -x && nvcc main.cu -o main ${flag} && ./main 10 $1)
 
