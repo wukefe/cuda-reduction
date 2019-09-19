@@ -3,7 +3,7 @@ __global__ void cuda_reduction_0(I *z, I *x, L n){
 }
 
 static I run_gpu_v0(I *x, L n){
-    I *dx, *dz; I z[0];
+    I *dx, *dz; I z[1];
     CUDA_NEW(dx, I, n);
     CUDA_NEW(dz, I, 1);
     // copy

@@ -188,7 +188,7 @@ Results:
 Discussions
 
 - Single GPU thread is very slow (`cuda 0`)
-- Loop Unrolling (`cuda 5`) and one-thread-do-more-things (`cuda 6`) are effective techniques
+- Loop unrolling (`cuda 5`) and one-thread-do-more-things (`cuda 6`) are effective techniques
 - Feeding data to GPU in chunks (in `cuda 3`) seems not a good idea
 
 
